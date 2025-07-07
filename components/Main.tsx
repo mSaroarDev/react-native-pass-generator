@@ -16,7 +16,9 @@ const Main = () => {
       <View style={styles.header}>
         <Text style={styles.text}>Password Generator</Text>
       </View>
-      <View style={styles.passwordBox} />
+      <View style={styles.passwordBox}>
+        <Text style={styles.generatedPassword}>Pswwf45&45</Text>
+      </View>
 
       <View style={styles.flexBox}>
         <Text style={styles.inputLabel}>Input Length</Text>
@@ -106,6 +108,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+  },
+  generatedPassword: {
+    fontSize: 25,
+    color: "#fff",
   },
   flexBox: {
     flex: 1,
